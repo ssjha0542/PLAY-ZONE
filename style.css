@@ -90,6 +90,20 @@ position: relative;
 top: 10rem;
 
 }
+.box_container{
+    height:calc( 100vh - ( 70px + 70px ) );
+    width: calc( 100vw - ( 100px + 100px ) );
+    background-color:grey;
+    position: absolute;
+    top:70px;
+    left:100px;
+
+}
+.fas{
+    font-size: 40px;
+    position: absolute;
+    left:70rem;
+}
 
 
 
