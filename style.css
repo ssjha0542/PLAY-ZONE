@@ -1,0 +1,106 @@
+body{
+    margin:0;
+    
+    background-image:repeating-conic-gradient(
+        from 45deg,
+        #111 0deg 90deg,
+         #222 90deg 180deg);
+    background-size: 4rem 4rem;
+}
+*{
+    box-sizing: border-box;
+}
+.ball{
+    background-color: white;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation-name: up-down;
+    animation-duration: 50s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+    float: left;
+}
+.ball2{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation-name: up-down-2;
+    animation-duration: 50s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    float: right;
+}
+@keyframes up-down{
+    100%{
+        margin-top: 0px;
+    }
+    75%{
+        margin-top: 545px;
+    }
+}
+@keyframes up-down-2{
+    100%{
+        margin-top: 0px;
+    }
+    50%{
+        margin-top: 545px;
+    }
+}
+.title_container{
+    height:70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+
+}
+
+
+
+.game_selection_area{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.game_selection_area>*{
+    height:200px;
+    width: 200px;
+    /****glassmorphism******/
+    background-image: linear-gradient(to right, rgba(177, 177, 184, 0.2), rgb(156, 159, 161));
+    font-size: 30px;
+    text-align: center;
+}
+.game_selection_area>*:hover{
+    box-shadow: 0px 0px 5px 5px rgba(162, 179, 167, 0.5);
+}
+img {
+    width: 100%;
+    height: 160px;
+}
+
+
+.game_1{
+position: relative;
+top: 10rem;
+
+}
+
+
+
+.game_2{
+    position: relative;
+    top: 10rem;
+
+}
+.game_3{
+    position: relative;
+    top: 10rem;
+    
+}
+
