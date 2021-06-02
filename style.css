@@ -117,4 +117,85 @@ top: 10rem;
     top: 10rem;
     
 }
+.main_area{
+    border: 1px solid black;
+    height: 474px;
+    display: flex;
+}
+.game_area{
+    height: 100%;
+    border-right:1px solid black;
+    width: 75%;
+}
+.score_area{
+    height: 100%;
+    width: 25%;
+    border: 1px solid black;
+    border-top: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.score_area>*{
+    width:75px;
+    height:75px;
+    border: 1px solid ;
+    
+}
+.your_score_area,.computer_score_area{
+    font-size: 18px;
+    font-family:'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+/****************tic tac toe setup********************/
+#div1,#div2,#div3,#div4,#div5,#div6,#div7,#div8,#div9{
+    border: 1px solid black;
+    height:100px;
+    width: 100px;
+    float:left;
+    font-size: 100px;
+    text-align: center;
+}
+#div1,#div4,#div7{
+    clear: left;
+    border-left: none;
+}
+#div3,#div6,#div9{
+    border-right: none;
+}
+#div1,#div2,#div3{
+    border-top: none;
+}
+#div7,#div8,#div9{
+    border-bottom: none;
+}
+#main{
+    margin-left: 300px;
+    margin-top:100px ;
+}
+/****************************************************/
+/********************for card game section creation*********/
+#memory_board{
+    text-align: center;
+    
+    background: #ccc;
+    border:#999 1px solid;
+    width: 800px;
+    height: 400px;
+    padding: 24px;
+    margin: 0px auto;
+}
+#memory_board>div{
+    background: grey;
+    border:#000 1px solid;
+    width:71px;
+    height: 71px;
+    float: left;
+    margin: 10px;
+    padding: 20px;
+    font-size: 64px;
+    cursor: pointer;
+    text-align: center;
+}
 
