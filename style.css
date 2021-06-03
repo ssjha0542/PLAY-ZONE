@@ -178,24 +178,26 @@ top: 10rem;
 /********************for card game section creation*********/
 #memory_board{
     text-align: center;
-    
-    background: #ccc;
-    border:#999 1px solid;
-    width: 800px;
+    width: 100%;
     height: 400px;
-    padding: 24px;
-    margin: 0px auto;
+    padding-top: 30px;
+    padding-left: 50px;
+    display: inline-block;
 }
 #memory_board>div{
-    background: grey;
-    border:#000 1px solid;
-    width:71px;
+    background: lightgrey;
+    border:#000 2px solid;
+    border-radius: 0.5rem;
+    width:70px;
     height: 71px;
     float: left;
-    margin: 10px;
-    padding: 20px;
-    font-size: 64px;
+    margin: 20px;
+    padding: 44px;
+    font-size: 40px;
     cursor: pointer;
-    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
+
 

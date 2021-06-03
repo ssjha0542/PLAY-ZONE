@@ -6,10 +6,10 @@ let countO=0;
 let playerXWin=0;
 var tiles_flipped=0;
 let player0Win=0;
+var count=1;
 var memory_values=[];
 var memory_tile_ids = [];
 var memory_array=['A','A','B','B','C','C','D','D','E','E','F','F','G','G','H','H','I','I','J','J','K','K','L','L'];
-var count=1;
 function handleBoxContainer(){
     let selectBox=document.querySelector(".box_container");
     let crossArea=document.createElement("div");
@@ -156,7 +156,7 @@ ticTocToe.addEventListener("click",function(){
     createSections();
     gameTicTacToe();
 });
-/***************************snake game section creation************************/
+/***************************card game section creation************************/
 function createSectionsCard(){
     /*******creating main area******************/
     let boxContainer=document.querySelector(".box_container");
@@ -164,26 +164,18 @@ function createSectionsCard(){
     MainArea.setAttribute("class","main_area");
     boxContainer.appendChild(MainArea);
     let gameArea=document.createElement("div");
-    gameArea.setAttribute("class","game_area");
+    gameArea.setAttribute("class","game_area_card");
     MainArea.appendChild(gameArea);
-    /*************Score Area Section Creation**************/
-    let scoreArea=document.createElement("div");
-    scoreArea.setAttribute("class","score_area");
-    MainArea.appendChild(scoreArea);
     /**********************creating section for memory board id*****************/
     let memoryBoard=document.createElement("div");
     memoryBoard.setAttribute("id","memory_board");
     gameArea.appendChild(memoryBoard);
-    handleCardGame();
+    newBoard();
 
 }
 
 /************logic for card game *****/
-function handleCardGame(){
-   
-    
 
-}
 function newBoard(){
     
     
@@ -234,9 +226,9 @@ function memoryFlipTile(tile,val){
 				    // Flip the 2 tiles back over
 				    var tile_1 = document.getElementById(memory_tile_ids[0]);
 				    var tile_2 = document.getElementById(memory_tile_ids[1]);
-				    tile_1.style.background = 'grey';
+				    tile_1.style.background = 'lightgrey';
             	    tile_1.innerHTML = "";
-				    tile_2.style.background = 'grey';
+				    tile_2.style.background = 'lightgrey';
             	    tile_2.innerHTML = "";
 				    // Clear both arrays
 				    memory_values = [];
