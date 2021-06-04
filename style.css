@@ -32,6 +32,7 @@ body{
     animation-duration: 50s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+    
     float: right;
 }
 @keyframes up-down{
@@ -39,7 +40,7 @@ body{
         margin-top: 0px;
     }
     75%{
-        margin-top: 545px;
+        margin-top: 84vmin;
     }
 }
 @keyframes up-down-2{
@@ -47,7 +48,7 @@ body{
         margin-top: 0px;
     }
     50%{
-        margin-top: 545px;
+        margin-top: 84vmin;
     }
 }
 .title_container{
