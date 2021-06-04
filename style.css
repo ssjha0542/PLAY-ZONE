@@ -63,12 +63,31 @@ body{
 }
 
 
-
+@media(max-width:770px){
+    .game_selection_area{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .score_area{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+    
+    
+    
+}
+  
 .game_selection_area{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    
 }
+
+  
 .game_selection_area>*{
     height:200px;
     width: 200px;
@@ -76,13 +95,15 @@ body{
     background-image: linear-gradient(to right, rgba(177, 177, 184, 0.2), rgb(156, 159, 161));
     font-size: 30px;
     text-align: center;
+    
 }
 .game_selection_area>*:hover{
     box-shadow: 0px 0px 5px 5px rgba(162, 179, 167, 0.5);
 }
 img {
     width: 100%;
-    height: 160px;
+    max-height: 70%;
+
 }
 
 
@@ -102,8 +123,7 @@ top: 10rem;
 }
 .fas{
     font-size: 40px;
-    position: absolute;
-    left:70rem;
+    float:right
 }
 
 
@@ -119,14 +139,33 @@ top: 10rem;
     
 }
 .main_area{
-    border: 1px solid black;
-    height: 474px;
+    border: 2px solid black;
+    height: 73vmin;
     display: flex;
 }
+
 .game_area_toe{
     height: 100%;
+    
     border-right:1px solid black;
     width: 75%;
+    background-color: grey;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-device-width:700px) {
+    #main{
+        height: 32vmax;
+        width: 70vmax;
+    }
+    
+}
+
+
+#main>div{
+    height:17.22vmin;
+    width:9.32vmin;
 }
 .game_area{
     height: 100%;
@@ -135,10 +174,12 @@ top: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: grey;
 }
 .score_area{
     height: 100%;
     width: 25%;
+    background-color: grey;
     border: 1px solid black;
     border-top: none;
     display: flex;
@@ -156,9 +197,11 @@ top: 10rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 2.6vmin;
     font-family:'Cambria', 'Cochin', Georgia, Times, 'Times New Roman', serif;
     font-weight: bold;
+    height:10vmin;
+    width: 12vmin;
 }
 /****************tic tac toe setup********************/
 #div1,#div2,#div3,#div4,#div5,#div6,#div7,#div8,#div9{
@@ -182,16 +225,16 @@ top: 10rem;
 #div7,#div8,#div9{
     border-bottom: none;
 }
-#main{
-    margin-left: 300px;
-    margin-top:100px ;
-}
+
 /****************************************************/
 /********************for card game section creation*********/
+.game_area_card{
+    background-color: grey;
+}
 #memory_board{
     text-align: center;
     width: 100%;
-    height: 400px;
+    height: 60.88vmin;
     padding-top: 30px;
     padding-left: 50px;
     display: inline-block;
@@ -200,8 +243,9 @@ top: 10rem;
     background: lightgrey;
     border:#000 2px solid;
     border-radius: 0.5rem;
-    width:70px;
-    height: 71px;
+    width:2.5%;
+    height: 2.5%;
+    
     float: left;
     margin: 20px;
     padding: 44px;
@@ -211,7 +255,15 @@ top: 10rem;
     justify-content: center;
     align-items: center;
 }
-
+@media (max-width:1325px){
+    #memory_board{
+        overflow-x: hidden;
+        height:100%
+    }
+    .main_area{
+        height: 100%;
+    }
+}
 /***********snake game**********/
 .board{
     background-color: gray;
@@ -223,11 +275,12 @@ top: 10rem;
     grid-template-columns: repeat(18,1fr);
 }
 .head{
-    background-color: red;
+    background-color: black;
 }
 .food{
-    background-color: purple;
+    background-color: rgb(70, 66, 70);
 }
 .snake{
-    background-color: yellow;
+    background-color: lightgrey;
+    border-radius: 50%;
 }

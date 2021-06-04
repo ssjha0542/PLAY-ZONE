@@ -23,6 +23,7 @@ function handleBoxContainer(){
 
     crossBtn.addEventListener("click",function(){
     selectBox=document.querySelector(".box_container");
+    count=1;
     //console.log(selectBox);
     /******make the tic tac toe scores initially zero again*********/
     countX=0;
@@ -218,7 +219,7 @@ function memoryFlipTile(tile,val){
             	memory_tile_ids = [];
 				// Check to see if the whole board is cleared
 				if(tiles_flipped == memory_array.length){
-					alert("Board cleared... generating new board");
+					alert("You did it ..press any key to play again");
 					document.getElementById('memory_board').innerHTML = "";
 					newBoard();
 				}
@@ -317,7 +318,7 @@ let snakeArr=[
 
 function main(ctime){
     window.requestAnimationFrame(main);
-    if((ctime-lastPaintTime)/1000<1/speed){
+    if((ctime-lastPaintTime)/1000<2/speed){
         return;
     }
     lastPaintTime=ctime;
