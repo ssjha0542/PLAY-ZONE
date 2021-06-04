@@ -23,7 +23,6 @@ function handleBoxContainer(){
 
     crossBtn.addEventListener("click",function(){
     selectBox=document.querySelector(".box_container");
-    count=1;
     //console.log(selectBox);
     /******make the tic tac toe scores initially zero again*********/
     countX=0;
@@ -78,15 +77,20 @@ function gameTicTacToe(){
     gameArea.appendChild(main);
 }
 
-function fill(control){
+function fill(control) {
     
-    if(count<=9){
+    if(count<=9 ){
+        if(document.getElementById(control.id).innerHTML!=""){
+            return;
+        }
     if(count%2!=0){
         document.getElementById(control.id).innerHTML="X";
     }
     else{
         document.getElementById(control.id).innerHTML="0";
     }
+    
+    
     count++;
     if(checkWin()){
         if(playerXWin==1){

@@ -165,7 +165,9 @@ top: 10rem;
 
 #main>div{
     height:17.22vmin;
-    width:9.32vmin;
+    width:12vmin;
+    font-size: 11vmin;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .game_area{
     height: 100%;
