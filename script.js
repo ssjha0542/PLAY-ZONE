@@ -93,6 +93,7 @@ function fill(control) {
     
     
     count++;
+    
     if(checkWin()){
         if(playerXWin==1){
             alert("Player X is the Winner");
@@ -114,8 +115,16 @@ function fill(control) {
         }
         count=1;
     }
+    if(count==10){
+        alert("Match Draw");
+        for(let i=1;i<=9;i++){
+            document.getElementById("div"+i).innerHTML="";
+        }
+        count=1;
     }
+}
     else{
+
         alert("Match Draw");
         for(let i=1;i<=9;i++){
             document.getElementById("div"+i).innerHTML="";
