@@ -27,6 +27,7 @@ function handleBoxContainer(){
     /******make the tic tac toe scores initially zero again*********/
     countX=0;
     countO=0;
+    
     /************************************************************ */
     while(selectBox.firstChild){
         selectBox.removeChild(selectBox.firstChild);
@@ -314,7 +315,7 @@ function snakeGameLogic(){
     main(ctime);
 }
 let inputDir={x:0,y:0};
-let speed=5;
+let speed=2;
 let lastPaintTime=0;
 let snakeArr=[
     {x:13,y:15}
@@ -322,7 +323,7 @@ let snakeArr=[
 
 function main(ctime){
     window.requestAnimationFrame(main);
-    if((ctime-lastPaintTime)/1000<2/speed){
+    if((ctime-lastPaintTime)/1000<1/speed){
         return;
     }
     lastPaintTime=ctime;

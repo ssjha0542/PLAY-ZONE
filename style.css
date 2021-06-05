@@ -57,7 +57,7 @@ body{
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 50px;
+    font-size: 7.77vmin;
     font-style: italic;
     font-weight: bold;
 
@@ -68,7 +68,7 @@ body{
     .game_selection_area{
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        row-gap: 5vmin;
     }
     .score_area{
         display: flex;
@@ -90,11 +90,11 @@ body{
 
   
 .game_selection_area>*{
-    height:200px;
+    height:31.2vmin;
     width: 200px;
     /****glassmorphism******/
     background-image: linear-gradient(to right, rgba(177, 177, 184, 0.2), rgb(156, 159, 161));
-    font-size: 30px;
+    font-size: 4.66vmin;
     text-align: center;
     
 }
@@ -115,16 +115,26 @@ top: 10rem;
 }
 .box_container{
     height:calc( 100vh - ( 70px + 70px ) );
-    width: calc( 100vw - ( 100px + 100px ) );
+    width: calc( 100vw - ( 14.6vmin ) );
     background-color:grey;
     position: absolute;
-    top:70px;
-    left:100px;
+    top:10.8vmin;
+    left:7.32vmin;
 
 }
 .fas{
     font-size: 40px;
     float:right
+}
+@media (max-width:770px){
+    .box_container{
+        height:85vmax;
+        width:78%;
+        overflow-y: hidden;
+    }
+    .game_2{
+        display: none;
+    }
 }
 
 
@@ -152,23 +162,28 @@ top: 10rem;
     width: 75%;
     background-color: grey;
     display:flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    
 }
 @media (max-device-width:700px) {
     #main{
         height: 32vmax;
         width: 70vmax;
+        margin:12vmin
     }
+    
     
 }
 
 
+
 #main>div{
     height:17.22vmin;
-    width:12vmin;
+    width:9vmin;
     font-size: 11vmin;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 .game_area{
     height: 100%;
@@ -238,8 +253,8 @@ top: 10rem;
     text-align: center;
     width: 100%;
     height: 60.88vmin;
-    padding-top: 30px;
-    padding-left: 50px;
+    padding-top: 4.66vmin;
+    padding-left: 3.66vmin;
     display: inline-block;
 }
 #memory_board>div{
@@ -250,9 +265,9 @@ top: 10rem;
     height: 2.5%;
     
     float: left;
-    margin: 20px;
-    padding: 44px;
-    font-size: 40px;
+    margin: 1.4vmin;
+    padding: 6.8vmin;
+    font-size:6.22vmin;
     cursor: pointer;
     display:flex;
     justify-content: center;
